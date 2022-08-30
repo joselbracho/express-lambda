@@ -31,7 +31,7 @@ app.post('/api/lambda',
 	let params = {
 		FunctionName: FunctionName,
 		Payload: JSON.stringify({
-			"key1": body.key1
+			"key1": request.body.key1
 		})
 	};
 
